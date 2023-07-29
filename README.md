@@ -1,1 +1,4 @@
 # High-voltage-DigiPot
+
+  AD5290 merupakan salah satu jenis potensiometer digital yang memiliki kapabilitas tegangan yang tinggi pada resistor networknya (up to 30 Volt). Potensiometer yang banyak beredar di pasaran saat ini mayoritas terbatas hanya up to 5 volt pada resistor network sehingga aplikasinya sangat terbatas. Potensiometer digital bisa disebut juga RDAC (resistive digital to analog converter) sederhananya rangkaiannya terdiri dari kumpulan resistor yang membentuk sebuah tangga (ladder resistor), setiap anak tangga terdapat sebuah saklar yang semuanya dapat menghubungkan ke terminal keluaran. Jumlah anak tangga atau step ini menentukan rasio/resolusi resistansi potensiometer digital, Angka pada Step ini umunya dinyatakan dalam nilai bit seperti 8 bit yang menandakan bahwa potensiometer digital tersebut memiliki variasi resistansi sebanyak 255 buah. Potensiometer digital yang ada dipasaran saat ini memiliki variasi resolusi 5 sampai 10 bit.
+
