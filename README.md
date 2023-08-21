@@ -12,7 +12,8 @@
 	 AD5290YRMZ100        | 8 bits |   100    | 10-Lead MSOP
      AD5290YRMZ100-R7     | 8 bits |   100    | 10-Lead MSOP
 
-     pada ad5290 terdapat batasan arus yang mengalir pada ketiga terminal resistor yaitu maksimum secara kontinu sebesar 5 miliamper dan 15 ma peak sehingga hal tersebut bisa membatasi aplikasi dari potensiometer digital dalam kasus tertentu. Dengan batasan tersebut maka dapat disimpulkan bahwa potensiometer digital tidak bisa sepenuhnya mengantikan potensiometer analog dan saat ini sangat susah juga mendapatkan potensiometer digital yang berspesifikasi tegangan yang tinggi. Kelebihan dari potensiometer digital antara lain yaitu : memiliki resolusi yang tinggi, dapat beroperasi pada suhu dan kelembapan sesuai dengan karakteristik material  semikonduktor, dapat dikontrol secara jarak jauh dan secara digital melalui komputer atau perangkat digital lain.
+  pada ad5290 terdapat batasan arus yang mengalir pada ketiga terminal resistor yaitu maksimum secara kontinu sebesar 5 miliamper dan 15 ma peak sehingga hal tersebut bisa membatasi aplikasi dari potensiometer digital dalam kasus tertentu. Dengan batasan tersebut maka dapat disimpulkan bahwa potensiometer digital tidak bisa sepenuhnya mengantikan potensiometer analog dan saat ini sangat susah juga mendapatkan potensiometer digital yang berspesifikasi tegangan yang tinggi. Kelebihan dari potensiometer digital antara lain yaitu : memiliki resolusi yang tinggi, dapat beroperasi pada suhu dan kelembapan sesuai dengan karakteristik material  semikonduktor, dapat dikontrol secara jarak jauh dan secara digital melalui komputer atau perangkat digital lain.
+  Dalam interface komunikasi spi dengan AD5290, secara default pengaturan komunikasi SPI CPOL CPHA 
   
 
   
