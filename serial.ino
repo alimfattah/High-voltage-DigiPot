@@ -1,15 +1,15 @@
-#include <SPI.h>
+#include <SPI.h>   //library spi
 //byte address=0x11;//B00010001 //command write mcp
 int CS= 10;       // insisialisasi chip select master connected to slave
 int dataIn;      //inisialisasi variabel
 
-void setup()
+void setup()                //conf
 {
-  pinMode (CS, OUTPUT);
+  pinMode (CS, OUTPUT);      //assigned CS pin to 10 mcu as output
    SPI.begin();             // setup spi begin corespond spi library
    Serial.begin(115200);   //setup serial communication
 }
-void loop() {
+void loop() {              //main prog
 
 if(Serial.available())
 {
