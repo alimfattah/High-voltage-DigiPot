@@ -12,8 +12,32 @@
 	 AD5290YRMZ100        | 8 bits |   100    | 10-Lead MSOP
      AD5290YRMZ100-R7     | 8 bits |   100    | 10-Lead MSOP
 
-  pada ad5290 terdapat batasan arus yang mengalir pada ketiga terminal resistor yaitu maksimum secara kontinu sebesar 5 miliamper dan 15 ma peak sehingga hal tersebut bisa membatasi aplikasi dari potensiometer digital dalam kasus tertentu. Dengan batasan tersebut maka dapat disimpulkan bahwa potensiometer digital tidak bisa sepenuhnya mengantikan potensiometer analog dan saat ini sangat susah juga mendapatkan potensiometer digital yang berspesifikasi tegangan yang tinggi. Kelebihan dari potensiometer digital antara lain yaitu : memiliki resolusi yang tinggi, dapat beroperasi pada suhu dan kelembapan sesuai dengan karakteristik material  semikonduktor, dapat dikontrol secara jarak jauh dan secara digital melalui komputer atau perangkat digital lain.
+  Pada ad5290 terdapat batasan arus yang mengalir pada ketiga terminal resistor yaitu maksimum secara kontinu sebesar 5 miliamper dan 15 ma peak sehingga hal tersebut bisa membatasi aplikasi dari potensiometer digital dalam kasus tertentu. Dengan batasan tersebut maka dapat disimpulkan bahwa potensiometer digital tidak bisa sepenuhnya mengantikan potensiometer analog dan saat ini sangat susah juga mendapatkan potensiometer digital yang berspesifikasi tegangan yang tinggi. Kelebihan dari potensiometer digital antara lain yaitu : 
+  1. Memiliki resolusi yang tinggi 
+  2. Dapat beroperasi pada suhu dan kelembapan sesuai dengan karakteristik material  semikonduktor
+  3. Dapat dikontrol secara jarak jauh dan secara digital melalui komputer atau perangkat digital lain.
   Dalam interface komunikasi spi dengan AD5290, secara default pengaturan komunikasi SPI CPOL CPHA dengan konfigurasi CPOL =0 CPHA =0.  namun dalam kasus tertentu konfigurasi komunikasi spi bisa diatur sesuai dengan kebutuhan penggunanya
+
+### Metode Wiper Control 
+
+#### digitalPotWrite(Value);
+    
+**Return Value:**
+Kembali ke posisi wiper sekarang.
+	
+**Deskripsi:**
+Mengirimkan sebuah perintah SPI menuju ke chip untuk mengubah posisi wiper saat ini.
+
+**Contoh:**
+```
+int 	nCSPin = 10;
+int	nTap;
+MCP41HVX1 MyDigipot( nCSPin);
+	
+MyDigipot.digitalPotWrite(50);			// Go to wiper position 50
+Serial.print( "The current wiper position is ");
+Serial.println( MyDigipot.digitalPotWrite());	// Displays 50 in the serial monitor.
+```
   
 
   
