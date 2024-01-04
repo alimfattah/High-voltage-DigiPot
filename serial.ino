@@ -19,11 +19,11 @@ if(Serial.available())
       Serial.println(dataIn);
       }
       if(dataIn==256){          //memasukan perintah wiper ke posisi 0 karena serial parseint mengembalikan angka 0
-      digitalPotWrite(0);
+      digitalPotWrite(0);        //safe mode agar posisi wiper tidak acak ketika ada masalah/overvalue input  pada komunikasi spi 
       Serial.println("0");
       }
       if(dataIn>256||dataIn<0){  //membatasi posisi wiper hanya dalam posisi 0-255
-      digitalPotWrite(127);
+      digitalPotWrite(127);      //safe mode  agar tidak over current pada terminal
       Serial.println("127");
       }
 }
