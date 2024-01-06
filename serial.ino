@@ -1,4 +1,5 @@
 #include <SPI.h>   //library spi
+#include <AD5290.h> 
 //byte address=0x11;//B00010001 //command write mcp
 int CS= 10;       // insisialisasi chip select master connected to slave
 int dataIn;      //inisialisasi variabel
