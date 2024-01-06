@@ -36,7 +36,7 @@ Mengirimkan sebuah perintah SPI menuju ke chip untuk mengubah posisi wiper saat 
 ```
 int 	nCSPin = 10;
 int	nTap;
-MCP41HVX1 MyDigipot( nCSPin);
+AD5290 MyDigipot( nCSPin);
 	
 MyDigipot.digitalPotWrite(50);			// Go to wiper position 50
 Serial.print( "The current wiper position is ");
