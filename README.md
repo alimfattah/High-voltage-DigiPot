@@ -18,6 +18,7 @@
 	 <li> Memiliki resolusi yang tinggi  </li>
 	 <li> Dapat beroperasi pada suhu dan kelembapan sesuai dengan karakteristik material  semikonduktor</li>
 	 <li> Dapat dikontrol secara jarak jauh dan secara digital melalui komputer atau perangkat digital lain.</li>
+	 <li> Terdapat kekurangan juga diantaranya toleransi yang cukup besar pada nilai resistor yaitu sekitar +-30%</li>
  </ol>
 <p>Dalam interface komunikasi spi dengan AD5290, secara default pengaturan komunikasi SPI CPOL CPHA dengan konfigurasi CPOL =0 CPHA =0.  namun dalam kasus tertentu konfigurasi komunikasi spi bisa diatur sesuai dengan kebutuhan penggunanya</p>
   
